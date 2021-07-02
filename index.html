@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Rising Oceans!!!</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+   
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="effects.html">Effects</a></li>
+                    <li class="logo"><a href="index.html">Rising Oceans Logo</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="information.html">Infromation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="slidecontainer">
+                <input type="range" min="1900" max="2100" value="50" class="slider" id="myRange">
+                <p>Year: <span id="demo"></span></p>
+              </div>
+
+            <script>
+                var slider = document.getElementById("myRange");
+                var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+                
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+        </section>
+        <section>Timeline</section>
+        <footer>TexPrep Megaproject Group 5</footer>
+</body>
+</html>
